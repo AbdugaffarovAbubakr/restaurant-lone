@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+:root {
+  --very-dark-green: #262b2e;
+  --dark-green: #31383c;
+  --olive-green: #31352e;
+  --faded-gray: #b4aeae6a;
+  --teal-green:#348F83;
+
+  --olive: #74a34d;
+  --olive: #348F83;
+  --dark-olive: #1c524e;
+  --sage-green: #447370;
+  --white: #ffffff;
+  --white-2:#e6eae9;
+  --white-3: #ebf4f4;
+  --aqua:#46b4ad;
+  --red:#d47171;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  width: 100%;
+  overflow-x: hidden!important;
+  font-family: "Comfortaa", sans-serif;
+
+}
+h1,h2,h3,h4,button,a{
+  font-family: "DM Sans", sans-serif;
+
+}
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  /* background-color: var(--very-dark-green); */
+  color: var(--white-2);
+  /* overflow-y: auto; */
+}
+.fixed-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: url("./assets/images/fixed-bg.svg")no-repeat center/cover;
+    
+    
+  }
+  .inner-fixed-bg{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #060707ac, #1a7b7760);
+  }
+button,
+a,
+li {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+li,
+a {
+  list-style-type: none;
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  cursor: pointer;
+}
+p {
+  font-size: 1.55rem;
+  font-weight: 400;
+  line-height: 1.65;
+}
+fieldset,input {
+  border: none;
+}
+input:focus,textarea:focus,input:hover,textarea:hover {
+  outline: none;
+  border: 1px solid var(--aqua)!important;
+  cursor: pointer;
+  transition: .3s ease;
+
+}
+

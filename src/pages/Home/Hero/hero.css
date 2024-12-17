@@ -1,0 +1,21 @@
+.hero-wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.searchSection-container{
+    width: 100%;
+    padding: 5rem 3.5%;
+    min-height: 700px;
+    background-color: transparent!important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   position: relative; 
+   z-index: 5;
+   
+
+}

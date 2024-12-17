@@ -1,0 +1,143 @@
+.mealCard-wrapper.wrapper{
+ /* padding: 0 3.5%;  */
+ margin-bottom: 5rem; 
+}
+
+.mealCard-grid{
+    margin-top: 8rem;
+    max-width: 1440px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); 
+    place-items: center;
+    gap: 4rem;
+}
+
+.mealCard{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 5;
+    border-radius: 1.2rem;
+    background-color: var(--dark-green);
+    border: 1px solid var(--faded-gray)!important;
+
+}
+.span-two{
+    grid-column: span 3;
+}
+.mealCard-bg{
+    min-height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    z-index: 5;
+    border-radius: 1rem 1rem 0 0;
+
+}
+.span-two-height{
+    /* min-height: 300px; */
+    background-size: cover;
+}
+.mealCard-text{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0 1.5rem 2rem 2.5rem;
+}
+.status,.tag{
+    font-family: "DM Sans", sans-serif;
+
+    width: fit-content;
+    padding: .3rem .7rem;
+    background-color: var(--teal-green);
+    color: var(--white);
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+
+}
+.tag{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+}
+.hard{
+color: var(--red);
+background-color: var(--sage-green);
+}
+
+.mealCard-title{
+    font-size: clamp(1.5rem,2vw,2rem);
+    margin-top: 1rem;
+}
+
+.mealCard-cta-wrapper{
+    border-top: 1px solid var(--faded-gray);
+    padding: 2rem 2.5rem 3rem 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mealCard-link{
+    gap: .3rem;
+    font-weight: 500;
+    background-color: var(--aqua);
+    width: fit-content;
+    height: 4.6rem;
+    padding: 0 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--faded-gray);
+    color: var(--white);
+}
+.mealCard-arrow{
+    scale: 1.2;
+}
+.page-nums-wrapper{
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+.pageNum-btn{
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--sage-green);
+    border-radius: .64rem;
+    color: var(--white);
+    font-weight: 700;
+}
+.current-page{
+    color: var(--white);
+    background-color: var(--aqua);
+}
+
+
+
+  @media (width <= 960px) {
+    .singleCategory-header-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* .singleCategory-parag {
+        font-size: 1.5rem;
+    } */
+  }
+ 
+  
